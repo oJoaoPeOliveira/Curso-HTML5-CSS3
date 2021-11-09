@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+    ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <!-- Ela permite a criação de vários sources/fontes -->
+    <!-- Se você não se preocupa com tamanho da imagem
+    rolagem lateral, seu usuário vai embora e se ele ir embora
+    isso aumenta uma taxa que o google chama de bounce rate ou
+    taxa de rejeição, ela é uma medida para dar valor ou desvalorizar
+    seu site, se o usuário busca por algo e cai no seu site e sai
+    isso é um auto bounce rate, site = ruim e o algoritmo vai parar
+    de indicar o seu site para outras pessoas, usuário em primeiro lugar -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+</body>
+</html>
